@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thales Gomes - Desenvolvedor Frontend</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/globals.css" />
+
+    <link rel="stylesheet" href="./src/css/secoes/header.css" />
+    <link rel="stylesheet" href="./src/css/secoes/home.css" />
+    <link rel="stylesheet" href="./src/css/secoes/about.css" />
+    <link rel="stylesheet" href="./src/css/secoes/abilities.css" />
+    <link rel="stylesheet" href="./src/css/secoes/projects.css" />
+    <link rel="stylesheet" href="./src/css/secoes/footer.css" />
+
+    <link rel="stylesheet" href="./src/css/fontawesome.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <a href="#">
+            <h1 class="logo">TG</h1>
+          </a>
+
+          <nav>
+            <input type="checkbox" id="menu-hamburguer" />
+            <label for="menu-hamburguer">
+              <div class="menu">
+                <span class="hamburguer"></span>
+              </div>
+            </label>
+
+            <ul>
+              <li><a href="#about-me">Sobre Mim</a></li>
+              <li><a href="#abilities">Habilidades</a></li>
+              <li><a href="#projects">Meus Projetos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="container">
+        <div class="row full-screen align-items-center">
+          <div class="text-home">
+            <p>Olá,</p>
+            <h1>Sou o Thales Gomes</h1>
+            <h2>Desenvolvedor Frontend</h2>
+
+            <div class="botoes">
+              <a href="src/archives/cv.pfd" target="_blank" class="btn"
+                ><span class="btn-transition box-shadow"></span>Veja meu CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-me section" id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Sobre mim</h2>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="about-me-image">
+            <div class="img-box">
+              <img src="./src/images/1684966459362.jpg" alt="Foto do Perfil" />
+            </div>
+          </div>
+
+          <div class="about-me-infos">
+            <p>
+              <strong
+                >Me chamo Thales Gomes e sou um desenvolvedor frontend em
+                formação.</strong>
+              Com um interesse profundo pela área de tecnologia, estou migrando
+              de área para me dedicar inteiramente ao campo da tecnologia.
+            </p>
+
+            <p>
+              Sou um autodidata dedicado, constantemente em busca de soluções
+              inovadoras para enfrentar desafios. Estou entusiasmado em expandir
+              meus conhecimentos e progredir nesse campo que está em constante
+              evolução.
+            </p>
+
+            <p>
+              Ah, e falando em hobbies, adoro me divertir com filmes, séries,
+              desenhos animados, animes e jogos. Em especial One Piece. 👒
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="abilities section" id="abilities">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Habilidades</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="abilities-container row">
+        <div class="ability">
+          <div class="logo">
+            <i class="devicon devicon-html5-plain-wordmark colored"></i>
+          </div>
+          <h3>HTML5</h3>
+        </div>
+
+        <div class="ability">
+          <div class="logo">
+            <i class="devicon devicon-css3-plain-wordmark colored"></i>
+          </div>
+          <h3>CSS3</h3>
+        </div>
+
+        <div class="ability">
+          <div class="logo">
+            <i class="devicon devicon-javascript-plain colored"></i>
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+
+        <div class="ability">
+          <div class="logo">
+            <i class="devicon devicon-github-original"></i>
+          </div>
+          <h3>GitHub</h3>
+        </div>
+
+        <div class="ability">
+          <div class="logo">
+            <i class="devicon devicon-git-plain colored"></i>
+          </div>
+          <h3>Git</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Meus Projetos</h2>
+          </div>
+        </div>
+
+        <div class="projects-container container">
+          <div class="project">
+            <div class="grid">
+              <a href="" class="page">
+                <img src="./src/images/portfolio.png" alt="Nome do Projeto 1" />
+                <div class="page-view">
+                  <p>Ver página completa</p>
+                </div>
+              </a>
+              <div class="project-infos">
+                <h3>Projeto 1</h3>
+                <h4>Portfólio</h4>
+                <p>
+                  Portfólio esse que reúne minha 'vida dev' com projetos feitos
+                  e habilidades. À medida que projetos mais complexos e que
+                  contemplem mais tecnologias forem sendo feitos o mesmo será
+                  atualizado.
+                </p>
+                <a href="">🔗 Ver no GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="grid">
+              <div class="project-infos">
+                <h3>Projeto 2</h3>
+                <h4>One Piece - Akuma no mi selection</h4>
+                <p>
+                  Projeto autoral baseado no projeto de um evento que tinha como
+                  intuito demonstrar algumas interações possíveis de se fazer
+                  com JavaScript.
+                </p>
+                <a
+                  href="https://github.com/thaleshng/one-piece-akuma-no-mi-selection"
+                  target="_blank">🔗 Ver no GitHub
+                </a>
+              </div>
+              <a
+                href="https://thaleshng.github.io/one-piece-akuma-no-mi-selection/"
+                target="_blank"
+                class="page"
+              >
+                <img
+                  src="./src/images/one-piece-akuma-no-mi-selection.png"
+                  alt="Nome do Projeto 2"
+                />
+                <div class="page-view">
+                  <p>Ver página completa</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="grid">
+              <a
+                href="https://thaleshng.github.io/landing-page-com-grid-e-flex/"
+                target="_blank"
+                class="page"
+              >
+                <img
+                  src="./src/images/landing-page-agencia-ficticia.png"
+                  alt="Nome do Projeto 3"
+                />
+                <div class="page-view">
+                  <p>Ver página completa</p>
+                </div>
+              </a>
+              <div class="project-infos">
+                <h3>Projeto 3</h3>
+                <h4>Landing Page - Agência Fícticia</h4>
+                <p>
+                  Landing Page de uma agência fícticia com o intuito testar os
+                  aprendizados dos módulos de HTML e CSS do curso de developer,
+                  usando as ferramentas ensinadas no mesmo, principalmente
+                  Flexbox e Grid.
+                </p>
+                <a
+                  href="https://github.com/thaleshng/landing-page-com-grid-e-flex"
+                  target="_blank">🔗 Ver no GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="grid">
+              <div class="project-infos">
+                <h3>Projeto 4</h3>
+                <h4>Landing Page - Huddle</h4>
+                <p>
+                  Landing Page de uma Mídia Social Fictícia (Huddle), proposta
+                  como um desafio do curso para usar as ferramentas ensinadas no
+                  curso e avaliar individualmente cada aluno.
+                </p>
+                <a
+                  href="https://github.com/thaleshng/quest-html-css-avancado"
+                  target="_blank">🔗 Ver no GitHub
+                </a>
+              </div>
+              <a
+                href="https://thaleshng.github.io/quest-html-css-avancado/"
+                target="_blank"
+                class="page">
+                <img src="./src/images/Huddle.png" alt="Nome do Projeto 4" />
+                <div class="page-view">
+                  <p>Ver página completa</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a
+            href="https://github.com/thaleshng?tab=repositories"
+            target="_blank"
+            class="see-more"
+            ><span class="btn-transition box-shadow"></span>Ver mais</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <h2>Me envie uma mensagem!</h2>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/thales-hng/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=5531986705814&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
+            target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="https://github.com/thaleshng" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/thaleshng/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

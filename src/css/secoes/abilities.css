@@ -1,0 +1,20 @@
+.abilities .abilities-container {
+    justify-content: center;
+    text-align: center;
+}
+
+.abilities .abilities-container .ability {
+    max-width: 350px;
+    padding: 40px 20px;
+}
+
+.abilities .abilities-container .ability .logo i {
+    font-size: 6rem;
+}
+
+.abilities .abilities-container .ability h3 {
+    color: var(--white-color);
+    font-size: var(--normal-font);
+    font-weight: 300;
+    margin: 20px 0;
+}
