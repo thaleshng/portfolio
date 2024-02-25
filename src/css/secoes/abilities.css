@@ -1,11 +1,17 @@
 .abilities .abilities-container {
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .abilities .abilities-container .ability {
+    min-width: 145px;
     max-width: 350px;
     padding: 40px 20px;
+}
+
+.abilities .abilities-container .ability .logo {
+    height: 63px;
 }
 
 .abilities .abilities-container .ability .logo i {
