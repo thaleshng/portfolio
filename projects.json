@@ -22,7 +22,7 @@
             "description": "Landing Page de uma agência fícticia com o intuito testar os aprendizados dos módulos de HTML e CSS do curso de developer, usando as ferramentas ensinadas no mesmo, principalmente Flexbox e Grid.",
             "pageLink": "https://thaleshng.github.io/landing-page-com-grid-e-flex/",
             "githubLink": "https://github.com/thaleshng/landing-page-com-grid-e-flex",
-            "src": "./src/assets/images/landing-page-agencia-ficticia.png"
+            "src": "../src/assets/images/landing-page-agencia-ficticia.png"
         },
         {
             "number": "Projeto 4",
