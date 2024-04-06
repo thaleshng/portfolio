@@ -1,0 +1,48 @@
+{   
+    "abilities": [
+        {
+            "name": "HTML5",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
+        },
+        {
+            "name": "CSS3",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
+        },
+        {
+            "name": "JavaScript",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+        },
+        {
+            "name": "TypeScript",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
+        },
+        {
+            "name": "React",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        },
+        {
+            "name": "Redux",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+        },
+        {
+            "name": "GitHub",
+            "src": "https://devicons.railway.app/i/github-light.svg"
+        },
+        {
+            "name": "GIT",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg"
+        },
+        {
+            "name": "npm",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+        },
+        {
+            "name": "JEST",
+            "src": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
+        },
+        {
+            "name": "Styled-Components",
+            "src": "https://skillicons.dev/icons?i=styledcomponents"
+        }
+    ]
+}
