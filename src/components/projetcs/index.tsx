@@ -23,6 +23,9 @@ export const Projects = () => {
         fetchData()
     }, [])
 
+    console.log(projects);
+    
+
     return (
         <ProjectsSection className="projects section" id="projects">
         <div className="container">
