@@ -96,7 +96,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
     padding: 30px 15px;
     max-height: 125px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
