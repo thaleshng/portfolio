@@ -4,7 +4,7 @@ import curriculo from "../../assets/archives/CV Thales Gomes.pdf"
 export const Home = () => {
     return (
         <SectionHome>
-            <div className="container">
+            <div className="container" id="home">
                 <div className="row full-screen align-items-center">
                     <div className="text-home">
                         <p>Olá,</p>

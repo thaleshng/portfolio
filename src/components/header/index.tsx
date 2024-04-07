@@ -1,14 +1,36 @@
 import styled from "styled-components"
 import "../../variables.css"
+import { Link as ScrollLink, LinkProps as ScrollLinkProps  } from "react-scroll"
+import { useState } from "react"
+
+interface StyledScrollLinkProps extends ScrollLinkProps {
+    active: boolean;
+}
 
 export const Header = () => {
+    const [activeLink, setActiveLink] = useState("home"); 
+
+    const handleLinkClick = (to: string) => {
+        setActiveLink(to); 
+    };
+
+    const handleLogoClick = () => {
+        setActiveLink("none"); 
+    };
+
     return (
         <StyledHeader>
             <div className="container">
                 <div className="row justify-content-between align-items-center">
-                    <a href="#">
+                    <StyledScrollLink
+                        to="home" 
+                        smooth={true}
+                        duration={200}
+                        onClick={handleLogoClick}
+                        active={activeLink === "about-me"}
+                    >
                         <h1 className="logo">TG</h1>
-                    </a>
+                    </StyledScrollLink>
 
                     <nav>
                         <input type="checkbox" id="menu-hamburguer" />
@@ -19,10 +41,50 @@ export const Header = () => {
                         </label>
 
                         <ul>
-                            <li><a href="#about-me">Sobre Mim</a></li>
-                            <li><a href="#abilities">Habilidades</a></li>
-                            <li><a href="#projects">Meus Projetos</a></li>
-                            <li><a href="#contact">Contato</a></li>
+                            <li>
+                                <StyledScrollLink
+                                    to="about-me"
+                                    smooth={true}
+                                    duration={200}
+                                    active={activeLink === "about-me"} // Verifica se este link está ativo
+                                    onClick={() => handleLinkClick("about-me")}
+                                >
+                                    Sobre Mim
+                                </StyledScrollLink>
+                            </li>
+                            <li>
+                                <StyledScrollLink
+                                    to="abilities"
+                                    smooth={true}
+                                    duration={200}
+                                    active={activeLink === "abilities"} // Verifica se este link está ativo
+                                    onClick={() => handleLinkClick("abilities")}
+                                >
+                                    Habilidades
+                                </StyledScrollLink>
+                            </li>
+                            <li>
+                                <StyledScrollLink
+                                    to="projects"
+                                    smooth={true}
+                                    duration={200}
+                                    active={activeLink === "projects"} // Verifica se este link está ativo
+                                    onClick={() => handleLinkClick("projects")}
+                                >
+                                    Meus Projetos
+                                </StyledScrollLink>
+                            </li>
+                            <li>
+                                <StyledScrollLink
+                                    to="contact"
+                                    smooth={true}
+                                    duration={200}
+                                    active={activeLink === "contact"} // Verifica se este link está ativo
+                                    onClick={() => handleLinkClick("contact")}
+                                >
+                                    Contato
+                                </StyledScrollLink>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -34,6 +96,16 @@ export const Header = () => {
 const StyledHeader = styled.header`
     padding: 30px 15px;
     max-height: 125px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    backdrop-filter: blur(15px);
     
     .logo {
         font-family: var(--secundary-font);
@@ -171,3 +243,8 @@ const StyledHeader = styled.header`
         }
     }
 `
+
+const StyledScrollLink = styled(ScrollLink)<StyledScrollLinkProps>`
+    cursor: pointer;
+    color: ${props => props.active ? "var(--primary-color)" : "white"}; 
+`;
