@@ -189,7 +189,7 @@ Error generating stack: `+o.message+`
 `,Kr=Sn(Gv)`
     cursor: pointer;
     color: ${e=>e.active?"var(--primary-color)":"white"}; 
-`,xS="/assets/CV%20Thales%20Gomes-BT7AZAni.pdf",ES=()=>b.jsx(bS,{id:"home",children:b.jsx("div",{className:"container",children:b.jsx("div",{className:"row full-screen align-items-center",children:b.jsxs("div",{className:"text-home",children:[b.jsx("p",{children:"Olá,"}),b.jsx("h1",{children:"Sou o Thales Gomes"}),b.jsx("h2",{children:"Desenvolvedor Frontend"}),b.jsx("div",{className:"botoes",children:b.jsxs("a",{href:xS,target:"_blank",className:"btn",children:[b.jsx("span",{className:"btn-transition box-shadow"}),"Veja meu CV"]})})]})})})}),bS=Sn.section`
+`,xS="/assets/CV%20Thales%20Gomes-B0I3rv2b.pdf",ES=()=>b.jsx(bS,{id:"home",children:b.jsx("div",{className:"container",children:b.jsx("div",{className:"row full-screen align-items-center",children:b.jsxs("div",{className:"text-home",children:[b.jsx("p",{children:"Olá,"}),b.jsx("h1",{children:"Sou o Thales Gomes"}),b.jsx("h2",{children:"Desenvolvedor Frontend"}),b.jsx("div",{className:"botoes",children:b.jsxs("a",{href:xS,target:"_blank",className:"btn",children:[b.jsx("span",{className:"btn-transition box-shadow"}),"Veja meu CV"]})})]})})})}),bS=Sn.section`
     padding-top: 90px;
     
     .full-screen {
