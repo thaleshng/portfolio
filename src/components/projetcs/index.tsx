@@ -7,7 +7,7 @@ interface Project {
     name: string,
     description: string,
     pageLink: string,
-    githubLink:string,
+    githubLink: string,
     src: string
 }
 
@@ -24,63 +24,63 @@ export const Projects = () => {
     }, [])
 
     console.log(projects);
-    
+
 
     return (
         <ProjectsSection className="projects section" id="projects">
-        <div className="container">
-            <div className="row">
-                <div className="section-title">
-                    <h2>Meus Projetos</h2>
+            <div className="container">
+                <div className="row">
+                    <div className="section-title">
+                        <h2>Meus Projetos</h2>
+                    </div>
+                </div>
+
+                <div className="projects-container container">
+                    {projects.map((project: Project, index) => (
+                        <div className="project" key={index}>
+                            <div className="grid">
+                                {(index % 2 === 0) ? (
+                                    <>
+                                        <a href={project.pageLink} target="_blank" className="page">
+                                            <img src={project.src} alt={project.name} />
+                                            <div className="page-view">
+                                                <p>Ver página completa</p>
+                                            </div>
+                                        </a>
+                                        <div className="project-infos">
+                                            <h3>{project.number}</h3>
+                                            <h4>{project.name}</h4>
+                                            <p>{project.description}</p>
+                                            <a href={project.githubLink} target="_blank">🔗 Ver no GitHub</a>
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className="project-infos">
+                                            <h3>{project.number}</h3>
+                                            <h4>{project.name}</h4>
+                                            <p>{project.description}</p>
+                                            <a href={project.githubLink} target="_blank">🔗 Ver no GitHub</a>
+                                        </div>
+                                        <a href={project.pageLink} target="_blank" className="page">
+                                            <img src={project.src} alt={project.name} />
+                                            <div className="page-view">
+                                                <p>Ver página completa</p>
+                                            </div>
+                                        </a>
+                                    </>
+                                )}
+                            </div>
+                        </div>
+                    ))}
+                    <a
+                        href="https://github.com/thaleshng?tab=repositories"
+                        target="_blank"
+                        className="see-more"
+                    ><span className="btn-transition box-shadow"></span>Ver mais</a>
                 </div>
             </div>
-
-            <div className="projects-container container">
-                {projects.map((project: Project, index) => (
-                    <div className="project" key={index}>
-                        <div className="grid">
-                            {(index % 2 === 0) ? (
-                                <>
-                                    <a href={project.pageLink} target="_blank" className="page">
-                                        <img src={project.src} alt={project.name} />
-                                        <div className="page-view">
-                                            <p>Ver página completa</p>
-                                        </div>
-                                    </a>
-                                    <div className="project-infos">
-                                        <h3>{project.number}</h3>
-                                        <h4>{project.name}</h4>
-                                        <p>{project.description}</p>
-                                        <a href={project.githubLink} target="_blank">🔗 Ver no GitHub</a>
-                                    </div>
-                                </>
-                            ) : (
-                                <>
-                                    <div className="project-infos">
-                                        <h3>{project.number}</h3>
-                                        <h4>{project.name}</h4>
-                                        <p>{project.description}</p>
-                                        <a href={project.githubLink} target="_blank">🔗 Ver no GitHub</a>
-                                    </div>
-                                    <a href={project.pageLink} target="_blank" className="page">
-                                        <img src={project.src} alt={project.name} />
-                                        <div className="page-view">
-                                            <p>Ver página completa</p>
-                                        </div>
-                                    </a>
-                                </>
-                            )}
-                        </div>
-                    </div>
-                ))}
-                <a
-                    href="https://github.com/thaleshng?tab=repositories"
-                    target="_blank"
-                    className="see-more"
-                ><span className="btn-transition box-shadow"></span>Ver mais</a>
-            </div>
-        </div>
-    </ProjectsSection>
+        </ProjectsSection>
     )
 }
 

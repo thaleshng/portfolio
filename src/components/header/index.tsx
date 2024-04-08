@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import "../../variables.css"
 import { Link as ScrollLink, LinkProps as ScrollLinkProps  } from "react-scroll"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 interface StyledScrollLinkProps extends ScrollLinkProps {
-    active: boolean;
+    active?: boolean;
 }
 
 export const Header = () => {
@@ -18,8 +18,38 @@ export const Header = () => {
         setActiveLink("none"); 
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = [ "home", "about-me", "abilities", "projects", "contact" ];
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.body.scrollHeight;
+
+            sections.forEach((section) => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const { top, height } = element.getBoundingClientRect();
+                    if (top <= 0 && top + height > 0) {
+                        setActiveLink(section);
+                    }
+                }
+            });
+
+            // Verifica se o usuário chegou ao final da página
+            if (scrollPosition + windowHeight >= documentHeight) {
+                setActiveLink("contact");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <StyledHeader>
+        <StyledHeader id="header">
             <div className="container">
                 <div className="row justify-content-between align-items-center">
                     <StyledScrollLink
@@ -27,7 +57,6 @@ export const Header = () => {
                         smooth={true}
                         duration={200}
                         onClick={handleLogoClick}
-                        active={activeLink === "about-me"}
                     >
                         <h1 className="logo">TG</h1>
                     </StyledScrollLink>
@@ -96,12 +125,11 @@ export const Header = () => {
 const StyledHeader = styled.header`
     padding: 30px 15px;
     max-height: 125px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin: auto; 
     width: 100%; 
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 10;

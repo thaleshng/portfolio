@@ -33,11 +33,11 @@ export const Abilities = () => {
                 {abilities.map((ability: Ability, index) => (
                     <div className="ability" key={index}>
                         <div className="logo">
-                        <img alt={`${ability.name} Icon`} width="60" src={ability.src} />
+                            <img alt={`${ability.name} Icon`} width="60" src={ability.src} />
                         </div>
                         <h3>{ability.name}</h3>
                     </div>
-                ))}                
+                ))}
             </div>
         </AbilitiesSection>
     )
